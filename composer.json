@@ -1,0 +1,16 @@
+{
+    "name": "teufik/performcb-task",
+    "description": "Task",
+    "authors": [
+        {
+            "name": "Teufik Cajlakovic",
+            "email": "teufik97@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}

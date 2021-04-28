@@ -1,0 +1,22 @@
+LIST_ALL_LOGS:		curl http://localhost
+
+UPLOAD_LOG:         curl -F "name=nicename" -F "file=@D:/Users/Teufik/Downloads/access.log.gz" http://localhost/log
+
+DOWNLOAD_LOG:		curl http://localhost/log/nicename
+
+DELETE_LOG: 		curl -X DELETE http://localhost/log/nicename
+
+
+AGGREGATE_IP:		curl "http://localhost/aggregate/ip?dt_start=2020-11-23+19:39:07&dt_end=2020-11-23+19:39:08"
+			        curl "http://localhost/aggregate/method?dt_start=2020-11-23%2019:39:07&dt_end=2020-11-23%2019:39:08"
+
+					curl "http://localhost/aggregate/ip?dt_start=2020-11-26+11:12:26"
+
+					curl "http://localhost/aggregate/ip?dt_end=2020-11-26+13:47:40"
+
+AGGREGATE_METHOD:	curl "http://localhost/aggregate/method?dt_start=2020-11-23+19:39:07&dt_end=2020-11-23+19:39:08"
+			        curl "http://localhost/aggregate/method?dt_start=2020-11-23%2019:39:07&dt_end=2020-11-23%2019:39:08"
+
+					curl "http://localhost/aggregate/method?dt_start=2020-11-26+11:12:26"
+
+					curl "http://localhost/aggregate/method?dt_end=2020-11-26+13:47:40"
